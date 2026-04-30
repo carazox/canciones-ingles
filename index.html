@@ -43,7 +43,7 @@
   header h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 2.2rem;
-    color: white;
+
     text-shadow: 2px 3px 0px rgba(0,0,0,0.15);
     position: relative;
     letter-spacing: 1px;
@@ -120,7 +120,7 @@
     padding: 16px 20px;
     font-family: 'Fredoka One', cursive;
     font-size: 1.3rem;
-    color: white;
+
   }
 
   .topic-header .emoji { font-size: 1.6rem; }
@@ -158,10 +158,19 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 18px;
-    color: white;
     box-shadow: 0 3px 10px rgba(255,107,107,0.35);
     transition: transform 0.1s, box-shadow 0.1s;
+  }
+
+  .play-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 16px;
+    border-color: transparent transparent transparent white;
+    margin-left: 4px;
   }
 
   .song-item:active .play-btn {
@@ -215,86 +224,86 @@
   <div id="cuarto" class="curso-panel active">
 
     <div class="topic c1"><div class="topic-header"><span class="emoji">🔷</span><span>Shapes</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=jOr2eRBluUs" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">"Squares," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=WA2ney3n0wY" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">"Triangles," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=ALcL3MuU4xQ" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Make A Circle | Preschool Song</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=7mBCdKW5PNQ&t=50s" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What Is A Rectangle? | Shape Songs with the StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=wRbXxdkAgmw" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Circles Are Everywhere! ⭕ Learn Shapes with the StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=TJhfl5vdxp4" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">The Shape Song #1</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=jOr2eRBluUs" target="_blank"><div class="play-btn"></div><div><div class="song-title">"Squares," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=WA2ney3n0wY" target="_blank"><div class="play-btn"></div><div><div class="song-title">"Triangles," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ALcL3MuU4xQ" target="_blank"><div class="play-btn"></div><div><div class="song-title">Make A Circle | Preschool Song</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=7mBCdKW5PNQ&t=50s" target="_blank"><div class="play-btn"></div><div><div class="song-title">What Is A Rectangle? | Shape Songs with the StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=wRbXxdkAgmw" target="_blank"><div class="play-btn"></div><div><div class="song-title">Circles Are Everywhere! ⭕ Learn Shapes with the StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=TJhfl5vdxp4" target="_blank"><div class="play-btn"></div><div><div class="song-title">The Shape Song #1</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c2"><div class="topic-header"><span class="emoji">🚌</span><span>Transports</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=PZJS2_pWMpE" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Row, Row, Row Your Boat (Ant Version)</div><div class="song-source">CoComelon Nursery Rhymes & Kids Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=PZJS2_pWMpE" target="_blank"><div class="play-btn"></div><div><div class="song-title">Row, Row, Row Your Boat (Ant Version)</div><div class="song-source">CoComelon Nursery Rhymes & Kids Songs</div></div></a>
     </div></div>
 
     <div class="topic c3"><div class="topic-header"><span class="emoji">🌈</span><span>Colors</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=tRNy2i75tCc" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">The Rainbow Colors Song</div><div class="song-source">—</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=zxIpA5nF_LY" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What's Your Favorite Color?</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=YyFLBTTAbSE" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What Color Is It? Song | Learn 11 Colors</div><div class="song-source">Learn English Kids</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=fj_z6zGQVyM" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Pete the Cat: I Love My White Shoes</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=tRNy2i75tCc" target="_blank"><div class="play-btn"></div><div><div class="song-title">The Rainbow Colors Song</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=zxIpA5nF_LY" target="_blank"><div class="play-btn"></div><div><div class="song-title">What's Your Favorite Color?</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=YyFLBTTAbSE" target="_blank"><div class="play-btn"></div><div><div class="song-title">What Color Is It? Song | Learn 11 Colors</div><div class="song-source">Learn English Kids</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=fj_z6zGQVyM" target="_blank"><div class="play-btn"></div><div><div class="song-title">Pete the Cat: I Love My White Shoes</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c4"><div class="topic-header"><span class="emoji">👷</span><span>Jobs</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=syut1tqUPWQ" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Jobs Song for Kids | What Do You Do? | Occupations</div><div class="song-source">Fun Kids English</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=syut1tqUPWQ" target="_blank"><div class="play-btn"></div><div><div class="song-title">Jobs Song for Kids | What Do You Do? | Occupations</div><div class="song-source">Fun Kids English</div></div></a>
     </div></div>
 
     <div class="topic c5"><div class="topic-header"><span class="emoji">🔢</span><span>Numbers</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ZhODBFQ2-bQ" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Five Little Monkeys</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=85M1yxIcHpw" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Numbers Song Let's Count 1-10</div><div class="song-source">—</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=Vr-L6q4vbWU" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">The Bananas Song | Counting Bananas</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ZhODBFQ2-bQ" target="_blank"><div class="play-btn"></div><div><div class="song-title">Five Little Monkeys</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=85M1yxIcHpw" target="_blank"><div class="play-btn"></div><div><div class="song-title">Numbers Song Let's Count 1-10</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=Vr-L6q4vbWU" target="_blank"><div class="play-btn"></div><div><div class="song-title">The Bananas Song | Counting Bananas</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c6"><div class="topic-header"><span class="emoji">🍎</span><span>Food</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=OzKY5YHnOTg" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Who Took The Cookie? | Nursery Rhyme</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=ykTR0uFGwE0" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Are You Hungry?</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=OzKY5YHnOTg" target="_blank"><div class="play-btn"></div><div><div class="song-title">Who Took The Cookie? | Nursery Rhyme</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ykTR0uFGwE0" target="_blank"><div class="play-btn"></div><div><div class="song-title">Are You Hungry?</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c1"><div class="topic-header"><span class="emoji">📅</span><span>Months of the Year</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=v608v42dKeI" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Months of the Year Song</div><div class="song-source">Learn English Kids</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=v608v42dKeI" target="_blank"><div class="play-btn"></div><div><div class="song-title">Months of the Year Song</div><div class="song-source">Learn English Kids</div></div></a>
     </div></div>
 
     <div class="topic c2"><div class="topic-header"><span class="emoji">🍂</span><span>Seasons of the Year</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ksGiLaIx39c" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Seasons Song for Kids (Autumn Version)</div><div class="song-source">Pancake Manor</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=0gqRgd1ZFVc" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">AUTUMN ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=4hIPBBTiEQ0" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">WINTER ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ksGiLaIx39c" target="_blank"><div class="play-btn"></div><div><div class="song-title">Seasons Song for Kids (Autumn Version)</div><div class="song-source">Pancake Manor</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=0gqRgd1ZFVc" target="_blank"><div class="play-btn"></div><div><div class="song-title">AUTUMN ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=4hIPBBTiEQ0" target="_blank"><div class="play-btn"></div><div><div class="song-title">WINTER ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
     </div></div>
 
     <div class="topic c3"><div class="topic-header"><span class="emoji">👨‍👩‍👧</span><span>Family</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ii_LtHrEiao" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Sesame Street: Family Song</div><div class="song-source">Sesame Street</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ii_LtHrEiao" target="_blank"><div class="play-btn"></div><div><div class="song-title">Sesame Street: Family Song</div><div class="song-source">Sesame Street</div></div></a>
     </div></div>
 
     <div class="topic c4"><div class="topic-header"><span class="emoji">🏠</span><span>House</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=8_Fr6EwRJsw" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">House Song | What are the parts of the house?</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=8_Fr6EwRJsw" target="_blank"><div class="play-btn"></div><div><div class="song-title">House Song | What are the parts of the house?</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c5"><div class="topic-header"><span class="emoji">👋</span><span>What's Your Name?</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=zMdq9jSaNLg" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What's Your Name? | featuring Noodle & Pals</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=zMdq9jSaNLg" target="_blank"><div class="play-btn"></div><div><div class="song-title">What's Your Name? | featuring Noodle & Pals</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c6"><div class="topic-header"><span class="emoji">⛅</span><span>Weather</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=Jn7uAsLWXpk" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What's the Weather</div><div class="song-source">The Kiboomers</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=hlzvrEfyL2Y" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Mr. Sun, Sun, Mr. Golden Sun</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=LFrKYjrIDs8" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Rain Rain Go Away</div><div class="song-source">Super Simple Songs / Sesame Street</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=Jn7uAsLWXpk" target="_blank"><div class="play-btn"></div><div><div class="song-title">What's the Weather</div><div class="song-source">The Kiboomers</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=hlzvrEfyL2Y" target="_blank"><div class="play-btn"></div><div><div class="song-title">Mr. Sun, Sun, Mr. Golden Sun</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=LFrKYjrIDs8" target="_blank"><div class="play-btn"></div><div><div class="song-title">Rain Rain Go Away</div><div class="song-source">Super Simple Songs / Sesame Street</div></div></a>
     </div></div>
 
     <div class="topic c1"><div class="topic-header"><span class="emoji">📆</span><span>Days of the Week</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=36n93jvjkDs" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Days of The Week Song For Kids</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=36n93jvjkDs" target="_blank"><div class="play-btn"></div><div><div class="song-title">Days of The Week Song For Kids</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c2"><div class="topic-header"><span class="emoji">🎒</span><span>School</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=HtkLCRlmOK8&t=19s" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Down at the Bus Stop - Nursery Rhyme</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=HtkLCRlmOK8&t=19s" target="_blank"><div class="play-btn"></div><div><div class="song-title">Down at the Bus Stop - Nursery Rhyme</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c3"><div class="topic-header"><span class="emoji">☀️</span><span>Good Morning</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=tVlcKp3bWH8" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Hello!</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=tVlcKp3bWH8" target="_blank"><div class="play-btn"></div><div><div class="song-title">Hello!</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c4"><div class="topic-header"><span class="emoji">😊</span><span>Feelings</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=W9rX6ApYqjo" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">This Is A Happy Face | Noodle & Pals</div><div class="song-source">Songs For Children</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=W9rX6ApYqjo" target="_blank"><div class="play-btn"></div><div><div class="song-title">This Is A Happy Face | Noodle & Pals</div><div class="song-source">Songs For Children</div></div></a>
     </div></div>
 
     <div class="topic c5"><div class="topic-header"><span class="emoji">🦵</span><span>Body</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ZanHgPprl-0" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Head Shoulders Knees & Toes (Sing It)</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ZanHgPprl-0" target="_blank"><div class="play-btn"></div><div><div class="song-title">Head Shoulders Knees & Toes (Sing It)</div><div class="song-source">—</div></div></a>
     </div></div>
 
   </div><!-- fin 4º -->
@@ -303,84 +312,84 @@
   <div id="tercero" class="curso-panel">
 
     <div class="topic c1"><div class="topic-header"><span class="emoji">🐄</span><span>Animals</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=_6HzoUcx3eo" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Old MacDonald Had A Farm</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://youtu.be/gUBZLathJWk" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Lola the Cow Song (La Vaca Lola)</div><div class="song-source">Clap Clap Kids</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=_6HzoUcx3eo" target="_blank"><div class="play-btn"></div><div><div class="song-title">Old MacDonald Had A Farm</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://youtu.be/gUBZLathJWk" target="_blank"><div class="play-btn"></div><div><div class="song-title">Lola the Cow Song (La Vaca Lola)</div><div class="song-source">Clap Clap Kids</div></div></a>
     </div></div>
 
     <div class="topic c2"><div class="topic-header"><span class="emoji">🙌</span><span>Actions</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=E_VcSQn73do" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Open, Close! | Open Shut Them Song</div><div class="song-source">—</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=cdvDMpIUMpo" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Clap Your Hands Song</div><div class="song-source">LittleBabyBum</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=WsiRSWthV1k" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Stand Up, Sit Down | Actions Songs</div><div class="song-source">Fun Kids English</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=VsgpUHUYuJI" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Move! | Dance Song for Kids</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=dUXk8Nc5qQ8" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Action Songs for Kids</div><div class="song-source">The Singing Walrus</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=2UcZWXvgMZE" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Party Freeze Dance Song</div><div class="song-source">The Kiboomers</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=E_VcSQn73do" target="_blank"><div class="play-btn"></div><div><div class="song-title">Open, Close! | Open Shut Them Song</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=cdvDMpIUMpo" target="_blank"><div class="play-btn"></div><div><div class="song-title">Clap Your Hands Song</div><div class="song-source">LittleBabyBum</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=WsiRSWthV1k" target="_blank"><div class="play-btn"></div><div><div class="song-title">Stand Up, Sit Down | Actions Songs</div><div class="song-source">Fun Kids English</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=VsgpUHUYuJI" target="_blank"><div class="play-btn"></div><div><div class="song-title">Move! | Dance Song for Kids</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=dUXk8Nc5qQ8" target="_blank"><div class="play-btn"></div><div><div class="song-title">Action Songs for Kids</div><div class="song-source">The Singing Walrus</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=2UcZWXvgMZE" target="_blank"><div class="play-btn"></div><div><div class="song-title">Party Freeze Dance Song</div><div class="song-source">The Kiboomers</div></div></a>
     </div></div>
 
     <div class="topic c3"><div class="topic-header"><span class="emoji">🚌</span><span>Means of Transports</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=GzrjwOQpAl0" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">The Wheels On The Bus</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=GzrjwOQpAl0" target="_blank"><div class="play-btn"></div><div><div class="song-title">The Wheels On The Bus</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c4"><div class="topic-header"><span class="emoji">🔷</span><span>Shapes</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ALcL3MuU4xQ" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Make A Circle | Preschool Song</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=jOr2eRBluUs" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">"Squares," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=WA2ney3n0wY" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">"Triangles," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ALcL3MuU4xQ" target="_blank"><div class="play-btn"></div><div><div class="song-title">Make A Circle | Preschool Song</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=jOr2eRBluUs" target="_blank"><div class="play-btn"></div><div><div class="song-title">"Squares," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=WA2ney3n0wY" target="_blank"><div class="play-btn"></div><div><div class="song-title">"Triangles," Songs About Shapes by StoryBots</div><div class="song-source">Netflix Jr</div></div></a>
     </div></div>
 
     <div class="topic c5"><div class="topic-header"><span class="emoji">👷</span><span>Jobs</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=nN5W6fOBy6Y" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Jobs Song for Kids – Professions Part 1</div><div class="song-source">Super Simple Nursery Rhymes</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=nN5W6fOBy6Y" target="_blank"><div class="play-btn"></div><div><div class="song-title">Jobs Song for Kids – Professions Part 1</div><div class="song-source">Super Simple Nursery Rhymes</div></div></a>
     </div></div>
 
     <div class="topic c6"><div class="topic-header"><span class="emoji">🔢</span><span>Numbers</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ZhODBFQ2-bQ" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Five Little Monkeys</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=85M1yxIcHpw" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Numbers Song Let's Count 1-10</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ZhODBFQ2-bQ" target="_blank"><div class="play-btn"></div><div><div class="song-title">Five Little Monkeys</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=85M1yxIcHpw" target="_blank"><div class="play-btn"></div><div><div class="song-title">Numbers Song Let's Count 1-10</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c1"><div class="topic-header"><span class="emoji">🌈</span><span>Colors</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=tRNy2i75tCc" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">The Rainbow Colors Song</div><div class="song-source">—</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=zxIpA5nF_LY" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What's Your Favorite Color?</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=fj_z6zGQVyM" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Pete the Cat: I Love My White Shoes</div><div class="song-source">—</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=YyFLBTTAbSE" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What Color Is It? Song | Learn 11 Colors</div><div class="song-source">Learn English Kids</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=tRNy2i75tCc" target="_blank"><div class="play-btn"></div><div><div class="song-title">The Rainbow Colors Song</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=zxIpA5nF_LY" target="_blank"><div class="play-btn"></div><div><div class="song-title">What's Your Favorite Color?</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=fj_z6zGQVyM" target="_blank"><div class="play-btn"></div><div><div class="song-title">Pete the Cat: I Love My White Shoes</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=YyFLBTTAbSE" target="_blank"><div class="play-btn"></div><div><div class="song-title">What Color Is It? Song | Learn 11 Colors</div><div class="song-source">Learn English Kids</div></div></a>
     </div></div>
 
     <div class="topic c2"><div class="topic-header"><span class="emoji">🍎</span><span>Food</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=YCf-PGu55Nc" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Do You Like Broccoli Ice Cream?</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=r5WLXZspD1M" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Apples & Bananas</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=YCf-PGu55Nc" target="_blank"><div class="play-btn"></div><div><div class="song-title">Do You Like Broccoli Ice Cream?</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=r5WLXZspD1M" target="_blank"><div class="play-btn"></div><div><div class="song-title">Apples & Bananas</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
     <div class="topic c3"><div class="topic-header"><span class="emoji">📆</span><span>Days of the Week</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=36n93jvjkDs" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Days of The Week Song For Kids</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=36n93jvjkDs" target="_blank"><div class="play-btn"></div><div><div class="song-title">Days of The Week Song For Kids</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c4"><div class="topic-header"><span class="emoji">⛅</span><span>Weather</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=Jn7uAsLWXpk" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">What's the Weather</div><div class="song-source">The Kiboomers</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=hlzvrEfyL2Y" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Mr. Sun, Sun, Mr. Golden Sun</div><div class="song-source">Super Simple Songs</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=LFrKYjrIDs8" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Rain Rain Go Away</div><div class="song-source">Super Simple Songs / Sesame Street</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=Jn7uAsLWXpk" target="_blank"><div class="play-btn"></div><div><div class="song-title">What's the Weather</div><div class="song-source">The Kiboomers</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=hlzvrEfyL2Y" target="_blank"><div class="play-btn"></div><div><div class="song-title">Mr. Sun, Sun, Mr. Golden Sun</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=LFrKYjrIDs8" target="_blank"><div class="play-btn"></div><div><div class="song-title">Rain Rain Go Away</div><div class="song-source">Super Simple Songs / Sesame Street</div></div></a>
     </div></div>
 
     <div class="topic c5"><div class="topic-header"><span class="emoji">📅</span><span>Months of the Year</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=Fe9bnYRzFvk" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Months of the Year Song</div><div class="song-source">The Singing Walrus</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=Fe9bnYRzFvk" target="_blank"><div class="play-btn"></div><div><div class="song-title">Months of the Year Song</div><div class="song-source">The Singing Walrus</div></div></a>
     </div></div>
 
     <div class="topic c6"><div class="topic-header"><span class="emoji">🍂</span><span>Seasons of the Year</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=ksGiLaIx39c" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Seasons Song for Kids (Autumn Version)</div><div class="song-source">Pancake Manor</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=0gqRgd1ZFVc" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">AUTUMN ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
-      <a class="song-item" href="https://www.youtube.com/watch?v=4hIPBBTiEQ0" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">WINTER ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=ksGiLaIx39c" target="_blank"><div class="play-btn"></div><div><div class="song-title">Seasons Song for Kids (Autumn Version)</div><div class="song-source">Pancake Manor</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=0gqRgd1ZFVc" target="_blank"><div class="play-btn"></div><div><div class="song-title">AUTUMN ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=4hIPBBTiEQ0" target="_blank"><div class="play-btn"></div><div><div class="song-title">WINTER ♫ | Seasons Song</div><div class="song-source">Wormhole Learning</div></div></a>
     </div></div>
 
     <div class="topic c1"><div class="topic-header"><span class="emoji">👨‍👩‍👧</span><span>Family</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=YJyNoFkud6g" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">Finger Family Collection - 7 Finger Family Songs</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=YJyNoFkud6g" target="_blank"><div class="play-btn"></div><div><div class="song-title">Finger Family Collection - 7 Finger Family Songs</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c2"><div class="topic-header"><span class="emoji">🏠</span><span>House</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=jUNTMKpoLAI" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">House Song</div><div class="song-source">—</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=jUNTMKpoLAI" target="_blank"><div class="play-btn"></div><div><div class="song-title">House Song</div><div class="song-source">—</div></div></a>
     </div></div>
 
     <div class="topic c3"><div class="topic-header"><span class="emoji">😊</span><span>Feelings</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=wqvQAcloTRQ" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">If You're Happy | Noodle & Pals</div><div class="song-source">Songs For Children</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=wqvQAcloTRQ" target="_blank"><div class="play-btn"></div><div><div class="song-title">If You're Happy | Noodle & Pals</div><div class="song-source">Songs For Children</div></div></a>
     </div></div>
 
     <div class="topic c4"><div class="topic-header"><span class="emoji">🦵</span><span>Body</span></div><div class="song-list">
-      <a class="song-item" href="https://www.youtube.com/watch?v=666UZRBO5q8" target="_blank"><div class="play-btn">▶</div><div><div class="song-title">My Teddy Bear</div><div class="song-source">Super Simple Songs</div></div></a>
+      <a class="song-item" href="https://www.youtube.com/watch?v=666UZRBO5q8" target="_blank"><div class="play-btn"></div><div><div class="song-title">My Teddy Bear</div><div class="song-source">Super Simple Songs</div></div></a>
     </div></div>
 
   </div><!-- fin 3º -->
